@@ -1,0 +1,48 @@
+{
+  "seller": [
+    {
+      "name": "abc",
+      "email": "abc@test.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "xyz",
+      "email": "xyz@test.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "Ali",
+      "email": "ali@test.com",
+      "password": "abc@123",
+      "id": 3
+    },
+    {
+      "name": "Fara",
+      "password": "Fara212*",
+      "email": "fara@gmail.com",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "name": "iphone 14 pro",
+      "price": "100000",
+      "color": "black",
+      "category": "mobile",
+      "description": "Brand New",
+      "image": "https://www.att.com/buy/phones/apple-iphone-14-pro.html",
+      "id": 1
+    },
+    {
+      "name": "samsung s23",
+      "price": "80000",
+      "color": "blue",
+      "category": "mobile",
+      "description": "samsung product",
+      "image": "https://www.samsung.com/us/business/mobile/phones/galaxy-s/galaxy-s23-256gb-unlocked-sm-s911ulgexaa/",
+      "id": 2
+    }
+  ]
+}
