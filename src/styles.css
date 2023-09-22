@@ -23,7 +23,7 @@ border: 1px solid blueviolet;
 color: blueviolet;
 }
 .form-button{
-height: 30px;
+height: 35px;
 border: 1px solid blueviolet;
 color: blueviolet;
 cursor: pointer;
@@ -34,4 +34,13 @@ padding-left: 10px;
 }
 .error-p{
     color: red;
+}
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.389);
+    border-radius: 5px;
+}
+.carousel-control-next-icon, 
+.carousel-control-prev-icon{
+    background-color: black;
+    border-radius: 5px;
 }

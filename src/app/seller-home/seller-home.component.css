@@ -1,10 +1,18 @@
-table{
+ table{
     text-align: left;
     color: blueviolet;
     border-collapse: collapse;
-}
+} 
 table th,table td{
     border: 1px solid blueviolet;
     padding: 10px;
     min-width: 160px;
+}
+td img{
+   width: 100px;  
+   height: 100px;
+  margin-left: 30px;
+}
+.adjust-update-link{
+margin-left: 10px;
 }

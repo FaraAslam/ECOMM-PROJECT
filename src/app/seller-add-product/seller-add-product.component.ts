@@ -15,12 +15,14 @@ addProductMessage:string|undefined;
   ngOnInit():void{}
 
   submit(data:product){
+ 
 this.product.addProduct(data).subscribe((result)=>{
-console.warn(result);
 if(result){
   this.addProductMessage="Product is successfully  added"
+ 
 }
 setTimeout(()=>this.addProductMessage=undefined,3000)
+
 })
   }
 }

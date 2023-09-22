@@ -1,0 +1,30 @@
+.product-header-img{
+    object-fit: contain;
+    height: 600px;
+    width:100% ;
+}
+.product-list-wrapper{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+}
+.product-item {
+    border: 1px solid #ddd;
+}
+.product-item img{
+    width: 220px;
+   height: 230px;
+   margin-left: 30px;
+}
+.product-details{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+.product-footer{
+justify-content:space-between;
+padding: 10px;
+display: flex;
+}

@@ -1,8 +1,13 @@
 <div class="nav">
 <h1><a routerLink="/">E-COMM</a></h1>
 <div *ngIf="menuType==='default'" class="nav-search">
- <input type="text" placeholder="search for item"/>
- <button>search</button>
+ <input type="text" #searchInput (keyup)="searchProducts($event)" (blur)="hideSearch()" placeholder="search for item"/>
+ <button (click)="submitSearch(searchInput.value)">search</button>
+ <ul class="suggested-result" *ngIf="searchResult">
+<li *ngFor="let item of searchResult">
+    <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>
+</li>
+ </ul>
 </div>
 <div [ngSwitch]="menuType">
     <ul *ngSwitchCase="'default'"> 

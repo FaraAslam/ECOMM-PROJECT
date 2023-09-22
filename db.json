@@ -27,22 +27,58 @@
   ],
   "products": [
     {
-      "name": "iphone 14 pro",
-      "price": "100000",
-      "color": "black",
+      "name": "samsung s23",
+      "price": "80000",
+      "color": "cream",
       "category": "mobile",
-      "description": "Brand New",
-      "image": "https://www.att.com/buy/phones/apple-iphone-14-pro.html",
+      "description": "samsung product",
+      "image": "../assets/images/samsung s23.webp",
       "id": 1
     },
     {
-      "name": "samsung s23",
+      "name": "Laptop",
       "price": "80000",
       "color": "blue",
-      "category": "mobile",
-      "description": "samsung product",
-      "image": "https://www.samsung.com/us/business/mobile/phones/galaxy-s/galaxy-s23-256gb-unlocked-sm-s911ulgexaa/",
+      "category": "Laptop",
+      "description": "dell product",
+      "image": "../assets/images/laptop.jpg",
       "id": 2
+    },
+    {
+      "name": "iphone 14 ",
+      "price": "100000",
+      "color": "black",
+      "category": "mobile",
+      "description": "apple product",
+      "image": "../assets/images/iphone.webp",
+      "id": 3
+    },
+    {
+      "name": "Airpods",
+      "price": "100",
+      "color": "green",
+      "category": "airpods",
+      "description": "Apple products",
+      "image": "../assets/images/airpods.webp",
+      "id": 4
+    },
+    {
+      "name": "Apple watch",
+      "price": "600",
+      "color": "red",
+      "category": "watch",
+      "description": "Apple product",
+      "image": "../assets/images/watch.jpeg",
+      "id": 5
+    },
+    {
+      "name": "Jeans",
+      "price": "under 200 dollars",
+      "color": "blue",
+      "category": "any",
+      "description": "brand new jeans for men and women",
+      "image":"../assets/images/jeans.jpg",
+      "id": 6
     }
   ]
 }
