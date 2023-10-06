@@ -23,6 +23,11 @@
     color: blueviolet;
     text-decoration: none;
 }
+.nav ul a{
+    color: blueviolet;
+    text-decoration: none;
+    cursor: pointer;
+}
 .nav .nav-search{
     margin-top: 5px;
     flex: 1;

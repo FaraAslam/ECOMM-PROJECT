@@ -1,24 +1,27 @@
 <div class="row product-details" *ngIf="productData">
-  <div class="col-sm-3">
+  <div class="col-sm-3 col-md-4">
     <img class="product-image" src="{{ productData.image }}" alt="" />
   </div>
-  <div class="col-sm-3">
+  <div class="col-sm-3 col-md-4">
     <div class="details">
       <h1>Name:{{ productData.name }}</h1>
       <h3>Price:{{ productData.price }}</h3>
       <div>
         Color:
-        <h5
-          [style.backgroundColor]="productData.color"
-          class="product-color"
-        ></h5>
+        <h5 [style.backgroundColor]="productData.color" class="product-color"></h5>
       </div>
       <h6>Category:{{ productData.category }}</h6>
       <h6>Category:{{ productData.description }}</h6>
-      <button class="form-button">Add to Cart</button><button class="form-button">Buy Now</button>
+      <button class="form-button">Buy Now</button>
+      <button *ngIf="!removeCart" class="form-button" (click)="addToCart()">
+        Add to Cart
+      </button>
+      <button *ngIf="removeCart" class="form-button" (click)="removeToCart(productData.id)">
+        remove to Cart
+      </button>
       <div class="quantity-group">
         <button (click)="handleQuantity('min')">-</button>
-        <input type="text" value="{{productQuantity}}" />
+        <input type="text" value="{{ productQuantity }}" />
         <button (click)="handleQuantity('plus')">+</button>
       </div>
     </div>
