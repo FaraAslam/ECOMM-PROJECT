@@ -22,14 +22,14 @@ export class UserService {
   }
   userLogin(user: login) {
     this.http
-      .get(
-        `http://localhost:3000/users?email=${user.email}&password=${user.password}`,
+      .get<signUp[]>(`http://localhost:3000/users?email=${user.email}&password=${user.password}`,
         { observe: 'response' }
       )
-      .subscribe((result:any) => {
+      .subscribe((result: any) => {
         if (result && result.body?.length) {
+          console.warn(result)
           this.invalidUserAuth.emit(false);
-          localStorage.setItem('user', JSON.stringify(result.body));
+          localStorage.setItem('user', JSON.stringify(result.body[0]));
           this.route.navigate(['/']);
         } else {
           this.invalidUserAuth.emit(true);

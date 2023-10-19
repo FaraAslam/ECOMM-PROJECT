@@ -29,12 +29,18 @@
       "password": "abc@123",
       "email": "ali@seller.com",
       "id": 5
+    },
+    {
+      "name": "Ali",
+      "password": "abc@123",
+      "email": "ali@test.com",
+      "id": 6
     }
   ],
   "products": [
     {
       "name": "samsung s23",
-      "price": "80000",
+      "price": "9000",
       "color": "cream",
       "category": "mobile",
       "description": "samsung product",
@@ -43,7 +49,7 @@
     },
     {
       "name": "Laptop",
-      "price": "80000",
+      "price": "8000",
       "color": "blue",
       "category": "Laptop",
       "description": "dell product",
@@ -52,7 +58,7 @@
     },
     {
       "name": "iphone 14 ",
-      "price": "100000",
+      "price": "1200",
       "color": "purple",
       "category": "mobile",
       "description": "apple product",
@@ -79,7 +85,7 @@
     },
     {
       "name": "Jeans",
-      "price": "under 200 dollars",
+      "price": "20 dollars",
       "color": "blue",
       "category": "any",
       "description": "brand new jeans for men and women",
@@ -92,105 +98,87 @@
       "name": "Hamza",
       "email": "hamza@user.com",
       "password": "abc@123",
-      "id": 1
-    },
-    {
-      "name": "wali",
-      "email": "wali@user.com",
-      "password": "abc@123",
       "id": 2
     },
     {
       "name": "zaid",
-      "email": "zaid@usercom",
+      "email": "zaid@user.com",
       "password": "abc@123",
       "id": 3
+    },
+    {
+      "name": "adil",
+      "email": "adil@user.com",
+      "password": "abc@123",
+      "id": 4
+    },
+    {
+      "name": "Haseeb",
+      "email": "haseeb@user.com",
+      "password": "abc@123",
+      "id": 5
     },
     {
       "name": "hadi",
       "email": "hadi@user.com",
       "password": "abc@123",
-      "id": 5
-    },
-    {
-      "name": "asher",
-      "email": "asher@user.com",
-      "password": "abc@123",
       "id": 6
-    },
-    {
-      "name": "taha",
-      "email": "taha@user.com",
-      "password": "abc@123",
-      "id": 7
     }
   ],
   "cart": [
     {
-      "name": "samsung s23",
-      "price": "80000",
-      "color": "cream",
-      "category": "mobile",
-      "description": "samsung product",
-      "image": "../assets/images/samsung s23.webp",
-      "quantity": 1,
-      "productId": 1,
-      "id": 1
-    },
-    {
       "name": "Laptop",
-      "price": "80000",
+      "price": "8000",
       "color": "blue",
       "category": "Laptop",
       "description": "dell product",
       "image": "../assets/images/laptop.jpg",
       "quantity": 1,
+      "userId": 6,
       "productId": 2,
-      "id": 2
-    },
-    {
-      "name": "iphone 14 ",
-      "price": "100000",
-      "color": "purple",
-      "category": "mobile",
-      "description": "apple product",
-      "image": "../assets/images/iphone.webp",
-      "quantity": 1,
-      "productId": 3,
-      "id": 3
-    },
-    {
-      "name": "iphone 14 ",
-      "price": "100000",
-      "color": "purple",
-      "category": "mobile",
-      "description": "apple product",
-      "image": "../assets/images/iphone.webp",
-      "quantity": 1,
-      "productId": 3,
-      "id": 4
-    },
-    {
-      "name": "Airpods",
-      "price": "100",
-      "color": "blue",
-      "category": "airpods",
-      "description": "Apple products",
-      "image": "../assets/images/airpods.webp",
-      "quantity": 1,
-      "productId": 4,
-      "id": 5
+      "id": 12
     },
     {
       "name": "samsung s23",
-      "price": "80000",
+      "price": "9000",
       "color": "cream",
       "category": "mobile",
       "description": "samsung product",
       "image": "../assets/images/samsung s23.webp",
-      "quantity": 1,
+      "quantity": 2,
+      "userId": 6,
       "productId": 1,
-      "id": 6
+      "id": 13
+    },
+    {
+      "name": "Jeans",
+      "price": "20 dollars",
+      "color": "blue",
+      "category": "any",
+      "description": "brand new jeans for men and women",
+      "image": "../assets/images/jeans.jpg",
+      "quantity": 1,
+      "userId": 6,
+      "productId": 6,
+      "id": 14
+    }
+  ],
+  "orders": [
+    {
+      "email": "",
+      "address": "kamalia pakistan",
+      "contact": "898989",
+      "totalPrice": 100200,
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "email": "",
+      "address": "kamalia pakistan",
+      "contact": "898989",
+      "totalPrice": 100200,
+      "userId": 2,
+      "id": 2
     }
   ]
 }

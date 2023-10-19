@@ -23,7 +23,7 @@ export class UserAuthComponent implements OnInit {
   login(data:login ) {
   this.user.userLogin(data);
   this.user.invalidUserAuth.subscribe((result)=>{
-    console.warn("apple",result)
+    console.warn(result)
     if(result){
       this.authError="Please enter valid user details"
     }else{
@@ -40,11 +40,11 @@ export class UserAuthComponent implements OnInit {
   }
   localCartToRemoteCart(){
     let data = localStorage.getItem('localCart');
+    let user = localStorage.getItem('user');
+    let userId = user && JSON.parse(user).id;
+  
     if(data){
       let cartDataList:product[] = JSON.parse(data);
-      let user = localStorage.getItem('user');
-      let userId = user && JSON.parse(user).id;
-
       cartDataList.forEach((product:product,index) => {
        let cartData:cart={
         ...product,
@@ -64,5 +64,8 @@ export class UserAuthComponent implements OnInit {
         },500);
       });
     }
+    setTimeout(()=>{
+      this.product.getCartList(userId)
+    },2000);
   }
 }
